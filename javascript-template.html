@@ -9,17 +9,18 @@
 <body>
     <canvas id="gameCanvas" width="900" height="700"></canvas>
     <script>
+        const CENTER_DOT = false; // center dot
         const FPS = 30; // frames per second
         const FRICTION = 0.5; // friction coefficient of space (0 = none, 1 = max)
-        const SHIP_SIZE = 30; // ship height in pixels
-        const SHIP_THRUST = 5; // acceleration of the ship in pixels per second per second
-        const TURN_SPEED = 360; // turn speed in degrees per second
-        const CENTER_DOT = false; // center dot
         const ROIDS_NUM = 9; // number of asteroids
         const ROIDS_JAG = 0.4; // jaggedness of asteroids (0 == none, 1 == lots)
         const ROIDS_SIZE = 100; // starting size of asteroids in pixels
         const ROIDS_SPD = 50; // max starting speed of asteroids in pixels per second
         const ROIDS_VERT = 10; // average number of vertices on each asteroid
+        const SHIP_SIZE = 30; // ship height in pixels
+        const SHIP_THRUST = 5; // acceleration of the ship in pixels per second per second
+        const TURN_SPEED = 360; // turn speed in degrees per second
+        const SHOW_BOUNDING = true; // show or hide collision bounding 
 
         /** @type {HTMLCanvasElement} */
         var canv = document.getElementById("gameCanvas");
